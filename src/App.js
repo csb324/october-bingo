@@ -24,13 +24,21 @@ function App() {
   }
 
   const initializeTasks = () => {
+    setTasks([]);
     let arr = [];
+    let chosenTasks = [];
+
     while(arr.length < 25){
         let r = Math.floor(Math.random() * taskBank.length);
-        if(arr.indexOf(r) === -1) arr.push(initTask(taskBank[r]));
+        let thisTask = initTask(taskBank[r]);
+
+        if(chosenTasks.indexOf(taskBank[r]) === -1) arr.push(thisTask);
+        chosenTasks.push(taskBank[r]);
+
         if(arr.length === 12) arr.push(initTask("VOTE"));
     }
-    setTasks(arr)
+
+    setTasks(arr);
   }
 
   if (tasks.length < 25) initializeTasks();
@@ -41,8 +49,8 @@ function App() {
       <Header />
 
       <div className="mainContainer">
-        <button onClick={initializeTasks}>Reset!</button>
-        <BingoCard className="BingoCard" tasks={tasks} />
+        <button className="resetButton" onClick={initializeTasks}>Reset!</button>
+        <BingoCard className="BingoCard" tasks={tasks} setTasks={setTasks} />
       </div>
 
       <Footer />

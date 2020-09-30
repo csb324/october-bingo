@@ -1,10 +1,45 @@
+:root {
+  --red: #e63946;
+  --honeydew:#f1faee;
+  --neutral: #f3f5f2;
+  --light-blue: #a8dadc;
+  --medium-blue: #457b9d;
+  --dark-blue: #1d3557;
+  --almost-black: #181a1e;
+  --decor-font: 'Secular One', Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral);
+  color: var(--almost-black);
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
 .mainContainer {
-  max-width: 900px;
+  max-width: 1000px;
   width: 95%;
 
+  background-color: var(--light-blue);
+  padding: 1em;
+
   margin: 0 auto;
+}
+
+.resetButton {
+  font-family: var(--decor-font);
+  font-size: 1.5em;
+  outline: none;
+  border: none;
+  background-color: var(--red);
+  color: var(--neutral);
+  margin-bottom: 0.5em;
 }

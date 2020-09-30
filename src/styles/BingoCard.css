@@ -1,25 +1,61 @@
 .bingoSquare {
-    border: 2px solid #eeeeee;
     display: flex;
-    padding: 10px;
+    padding: 0.5em 1em;
     align-items: center;
+    background-color: var(--neutral);
+    flex-wrap: wrap;
+    align-items: flex-end;
+    position: relative;
+}
+
+.bingoSquare--checked {
+    /* background: var(--medium-blue); */
+    /* color: #ffffff; */
+}
+
+.bingoSquare:before {
+    display: none;
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 1rem;
+    font-size: 8em;
+    opacity: 0.3;       
+    pointer-events: none;
+}
+
+.bingoSquare--checked:before {
+    display: block;
+    content: "\2714";
+    color: var(--red);
 }
 
 .taskText {
     flex-grow: 1;
+    position: relative;
+    z-index: 2;
 }
 
+
 .taskLink {
-    
+    width: 100%;
+    text-decoration: none;
+    color: var(--medium-blue);
+    text-transform: uppercase;
+
+    font-family: var(--decor-font);
 }
 
 .BingoCard {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .BingoCard {
         grid-template-rows: repeat(24, auto);
 		grid-template-columns: auto;
@@ -27,5 +63,34 @@
 
     .bingoSquare {
         text-align: left;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .taskLink {
+        width: initial;
+        flex-shrink: 0;
+    }
+    .taskText {
+        margin: 0 1em;
+    }
+
+    .bingoSquare:before {
+        flex-shrink: 0;
+        display: block;
+        border: 2px solid var(--medium-blue);
+        height: 1rem;
+        width: 1rem;
+        position: relative;
+        font-size: 1em;
+        opacity: 1;
+        top: 0;
+        margin-right: 0.5rem;
+
+    }
+
+    .bingoSquare--checked:before {
+        opacity: 1;
+        font-size: 1.2rem;
     }
 }
