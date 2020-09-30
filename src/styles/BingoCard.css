@@ -1,0 +1,31 @@
+.bingoSquare {
+    border: 2px solid #eeeeee;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.taskText {
+    flex-grow: 1;
+}
+
+.taskLink {
+    
+}
+
+.BingoCard {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+@media screen and (max-width: 700px) {
+    .BingoCard {
+        grid-template-rows: repeat(24, auto);
+		grid-template-columns: auto;
+    }
+
+    .bingoSquare {
+        text-align: left;
+    }
+}
