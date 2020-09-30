@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/BingoCard.css';
 
 function BingoSquare({ task, taskIndex, toggle }) {
@@ -13,7 +13,7 @@ function BingoSquare({ task, taskIndex, toggle }) {
             <div className="taskText">
                 {task.text}
             </div>
-            <a className="taskLink" href="#" target="_blank">Learn More</a>
+            <a className="taskLink" href="http://google.com" rel="noopener noreferrer" target="_blank">Learn More</a>
         </div>
     )
 }
