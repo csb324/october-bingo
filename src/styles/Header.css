@@ -4,3 +4,9 @@
     font-size: 3em;
 }
 
+
+@media screen and (max-width: 800px) {
+    .Header {
+        font-size: 1.5em;
+    }
+}

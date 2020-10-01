@@ -8,12 +8,28 @@ function BingoSquare({ task, taskIndex, toggle }) {
         toggle(taskIndex);
     }
 
+    const taskLink = () => {
+        if (task.link) {
+            return (
+                <div className="taskLinkContainer">
+                    <a className="taskLink" href={task.link} rel="noopener noreferrer" target="_blank">{task.linkText || "Learn More"}</a>
+                </div>
+            )
+        } else {
+            return null;
+        }
+    }
+
+
     return (
         <div onClick={toggleChecked} className={ task.isChecked ? 'bingoSquare bingoSquare--checked' : 'bingoSquare'}>
-            <div className="taskText">
-                {task.text}
+            <div className="bingoCheckbox"></div>
+            <div className="taskTextContainer">
+                <div className={ task.title === 'VOTE' ? 'taskText taskText--vote' : 'taskText' }>
+                    {task.title}
+                </div>
             </div>
-            <a className="taskLink" href="http://google.com" rel="noopener noreferrer" target="_blank">Learn More</a>
+            { taskLink() }
         </div>
     )
 }

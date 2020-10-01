@@ -1,51 +1,56 @@
 .bingoSquare {
-    display: flex;
-    padding: 0.5em 1em;
-    align-items: center;
     background-color: var(--neutral);
-    flex-wrap: wrap;
-    align-items: flex-end;
     position: relative;
 }
 
-.bingoSquare--checked {
-    /* background: var(--medium-blue); */
-    /* color: #ffffff; */
-}
-
-.bingoSquare:before {
-    display: none;
-    position: absolute;
-    content: "";
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 1rem;
-    font-size: 8em;
-    opacity: 0.3;       
-    pointer-events: none;
-}
-
-.bingoSquare--checked:before {
-    display: block;
-    content: "\2714";
-    color: var(--red);
-}
-
-.taskText {
-    flex-grow: 1;
+.taskTextContainer {
     position: relative;
     z-index: 2;
+    cursor: pointer;
 }
 
+.taskTextContainer:hover {
+    color: var(--dark-blue);
+}
 
-.taskLink {
+.taskLinkContainer {
     width: 100%;
+    align-self: flex-end;
+    display: block;
+}
+.taskLink {
+    position: relative;
     text-decoration: none;
     color: var(--medium-blue);
     text-transform: uppercase;
+    padding: 2px 10px;
+    transition: 0.1s;
+    display: inline-block;
+}
 
-    font-family: var(--decor-font);
+.taskLink:hover {
+    color: var(--red)
+}
+.taskLink:before, .taskLink:after {
+    transition: 0.1s;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: 3px solid var(--light-blue);
+    width: 0.25em;
+}
+.taskLink:before {
+    left: 0;
+    border-right: 0px;
+}
+.taskLink:after {
+    right: 0;
+    border-left: 0px;
+}
+
+.taskLink:hover:before, .taskLink:hover:after {
+    border-color: var(--medium-blue);
 }
 
 .BingoCard {
@@ -55,42 +60,106 @@
     grid-gap: 10px;
 }
 
+@media screen and (min-width: 801px) {
+    .bingoSquare {    
+        display: flex;
+        padding: 0.5em 1em;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+
+
+    .bingoSquare:before {
+        display: block;
+
+        content: "\2714";
+        color: var(--red);
+
+        position: absolute;
+        text-align: center;
+        pointer-events: none;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -150%);
+        font-size: 8em;
+        opacity: 0.3;           
+        transition: 0.1s;
+    }
+    .bingoSquare--checked:before {
+        transform: translate(0, -50%);
+    }
+    
+    .bingoCheckbox {
+        display: none;
+    }
+
+    .taskTextContainer {
+        display:flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .taskText--vote {
+        font-size: 3em;
+    }
+}
+
 @media screen and (max-width: 800px) {
+    
     .BingoCard {
         grid-template-rows: repeat(24, auto);
 		grid-template-columns: auto;
     }
 
     .bingoSquare {
+        display: grid;
+        grid-template-columns: 25px auto;
+
+        grid-gap: 0.5em;
         text-align: left;
-        flex-wrap: nowrap;
         align-items: flex-start;
+        padding: 0.5em;
+    }
+
+    .taskLinkContainer {
+        width: auto;
+        grid-column: 2;
     }
 
     .taskLink {
-        width: initial;
-        flex-shrink: 0;
-    }
-    .taskText {
-        margin: 0 1em;
+        display: inline-block;
     }
 
-    .bingoSquare:before {
-        flex-shrink: 0;
-        display: block;
+    .taskText--vote {
+        font-size: 1.5em;
+        line-height: 1;
+    }
+
+    .taskTextContainer {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .bingoCheckbox {
         border: 2px solid var(--medium-blue);
-        height: 1rem;
-        width: 1rem;
         position: relative;
+        padding-bottom: 80%;
         font-size: 1em;
         opacity: 1;
-        top: 0;
-        margin-right: 0.5rem;
-
     }
 
-    .bingoSquare--checked:before {
-        opacity: 1;
-        font-size: 1.2rem;
+    .bingoSquare--checked .bingoCheckbox:before {
+        display: block;
+        content: "\2714";
+        color: var(--red);
+        position: absolute;
+        top: -2px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 1.2em;
     }
 }

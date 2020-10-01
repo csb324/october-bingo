@@ -18,8 +18,8 @@ function App() {
 
   const initTask = (task) => {
     return {
-      text: task,
-      isChecked: false
+      isChecked: false,
+      ...task
     }
   }
 
@@ -32,10 +32,10 @@ function App() {
         let r = Math.floor(Math.random() * taskBank.length);
         let thisTask = initTask(taskBank[r]);
 
-        if(chosenTasks.indexOf(taskBank[r]) === -1) arr.push(thisTask);
-        chosenTasks.push(taskBank[r]);
+        if(chosenTasks.indexOf(taskBank[r].title) === -1) arr.push(thisTask);
+        chosenTasks.push(taskBank[r].title);
 
-        if(arr.length === 12) arr.push(initTask("VOTE"));
+        if(arr.length === 12) arr.push(initTask({title: "VOTE"}));
     }
 
     setTasks(arr);
@@ -49,7 +49,11 @@ function App() {
       <Header />
 
       <div className="mainContainer">
-        <button className="resetButton" onClick={initializeTasks}>Reset!</button>
+        <div className="cardHeader">
+          <h2 className="cardTitle">My Card</h2>
+          <button className="resetButton" onClick={initializeTasks}>Shuffle!</button>
+        </div>
+        
         <BingoCard className="BingoCard" tasks={tasks} setTasks={setTasks} />
       </div>
 
