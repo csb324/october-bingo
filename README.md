@@ -1,3 +1,13 @@
+## Donald Trump Must b-i-n-GO
+
+A bingo card for you to take on small actionable tasks to get Democrats elected up and down the ballot. Please let us know if you get bingo (honor system!) and we will tweet it out!
+
+If you'd like to suggest a new task or state-specific task, you can open a pull request and/or tweet [@clarabellum](https://twitter.com/clarabellum) or [@mkramer](https://twitter.com/mkramer).
+
+Disclosure: We are not connected to any campaign or organization listed. If you like this project, please spread the word and/or donate to one of the squares mentioned on the Bingo card.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
