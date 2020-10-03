@@ -2,6 +2,11 @@
     font-family: var(--decor-font);
     color: var(--dark-blue);
     font-size: 3em;
+    text-transform: uppercase;
+}
+
+.Header .aside {
+    color: var(--red);
 }
 
 

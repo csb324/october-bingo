@@ -4,7 +4,7 @@ import '../styles/Header.css';
 function Header() {
     return (
         <div className="Header">
-            <h1>October Bingo!</h1>
+            <h1>Donald Trump Must <span className="aside">bin</span>GO</h1>
         </div>
     )
 }
