@@ -1,12 +1,12 @@
 .Header {
-    font-family: var(--decor-font);
-    color: var(--dark-blue);
+    font-family: 'Secular One', Arial, Helvetica, sans-serif;
+    color: #1d3557;
     font-size: 3em;
     text-transform: uppercase;
 }
 
 .Header .aside {
-    color: var(--red);
+    color: #e63946;
 }
 
 

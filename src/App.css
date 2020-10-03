@@ -14,9 +14,9 @@
 }
 
 body {
-  background-color: var(--neutral);
-  color: var(--almost-black);
-  font-family: var(--decor-font);
+  background-color: #f3f5f2;
+  color: #181a1e;
+  font-family: 'Secular One', Arial, Helvetica, sans-serif;
 }
 
 .App {
@@ -28,7 +28,7 @@ body {
   width: 95%;
   border-radius: 5px;
 
-  background-color: var(--light-blue);
+  background-color: #a8dadc;
   padding: 1em;
 
   box-shadow: 0px 5px 8px -3px #dddddd;
@@ -40,19 +40,19 @@ body {
   position: relative;
 }
 .cardTitle {
-  color: var(--medium-blue);
+  color: #457b9d;
   font-size: 2.5em;
   text-transform: uppercase;
   margin: 0 0 0.25em;
   letter-spacing: 0.15em;
 }
 .resetButton {
-  font-family: var(--decor-font);
+  font-family: 'Secular One', Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   outline: none;
   border: none;
-  background-color: var(--red);
-  color: var(--neutral);
+  background-color: #e63946;
+  color: #f3f5f2;
   margin-bottom: 0.5em;
   position: absolute;
   right: 0;
