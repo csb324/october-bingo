@@ -1,22 +1,23 @@
 import React from 'react';
+import '../styles/Footer.css';
 
 function Footer() {
     return (
-        <footer>
+        <footer className="Footer">
             <p>
-                Built by: [Clara Beyer](https://twitter.com/clarabellum)
+                Built by: <a href="https://twitter.com/clarabellum" target="_blank" rel="noopener noreferrer">Clara Beyer</a>
             </p>
             <p>
-                Idea and original spreadsheet by: [Mel Kramer](https://twitter.com/mkramer)
+                Idea and original spreadsheet by: <a href="https://twitter.com/mkramer" target="_blank" rel="noopener noreferrer">Mel Kramer</a>
             </p>
             <p>
-                Tasks by: People like you! Do you have an idea to add to this spreadsheet? Tweet us, or [submit a pull request](https://github.com/csb324/october-bingo/blob/main/src/lib/taskBank.js).
+                Tasks by: People like you! Do you have an idea to add to this spreadsheet? Tweet us, or <a href="https://github.com/csb324/october-bingo/blob/main/src/lib/taskBank.js" target="_blank" rel="noopener noreferrer">submit a pull request</a>.
             </p>
             <p>
                 If you like this, please spread the word and donate to one of the organizations listed in this spreadsheet.
             </p>
             <p>
-                Please feel free to fork this and make this bingo card state or industry specific!
+                Please feel free to <a href="https://github.com/csb324/october-bingo" target="_blank" rel="noopener noreferrer">fork this on github</a> and make this bingo card state or industry specific!
             </p>
         </footer>
     )

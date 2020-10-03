@@ -1,0 +1,7 @@
+.Footer a {
+    /* text-decoration: none; */
+    color: var(--medium-blue);
+}
+.Footer a:hover {
+    color: var(--dark-blue);
+}
