@@ -3,13 +3,14 @@ const taskBank = [
         "title": "Share on your local neighborhood FB group or NextDoor group one local candidate you're voting for and why.",
     },
     {
-        "title": "Encourage your social media audience to fill out the Census.",
+        "title": "Encourage your social media audience to fill out the 2020 Census.",
         "link": "https://www.prb.org/importance-of-us-census/",
         "linkText": "Get Language"
     },
     {
         "title": "Sign up to write letters to likely voters with @votefwd",
         "link": "https://votefwd.org/",
+        "linkText": "Write letters"
     },
     {
         "title": "Text 5 people and make sure they have a voting plan.",
@@ -23,6 +24,7 @@ const taskBank = [
     {
         "title": "If you're not in a swing state, adopt a state!",
         "link": "https://votesaveamerica.com/adopt-a-state/",
+        "linkText": "Adopt State"
     },
     {
         "title": "Commit to volunteer during the last weekends before the election.",
@@ -39,6 +41,7 @@ const taskBank = [
     },
     {
         "title": "Thank a reporter on social media. They are doing hard work and have had a very hard year.",
+        
     },
     {
         "title": "Donate to a local news organization that is pounding the pavement and breaking stories.",
@@ -77,6 +80,7 @@ const taskBank = [
     {
         "title": "Donate to the Southern Coalition for Social Justice.",
         "link": "https://www.southerncoalition.org/donate/",
+        "linkText": "Donate Now"
     },
     {
         "title": "Read a sample ballot, and be sure you're ready to vote in every race in your area!",
@@ -85,6 +89,7 @@ const taskBank = [
     {
         "title": "Write postcards.",
         "link": "https://postcardstovoters.org/",
+        "linkText": "Write Postcards"
     },
     {
         "title": "Text canvass voters!",
