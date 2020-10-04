@@ -2,11 +2,9 @@
 
 A bingo card for you to take on small actionable tasks to get Democrats elected up and down the ballot. Please let us know if you get bingo (honor system!) and we will tweet it out!
 
-If you'd like to suggest a new task or state-specific task, you can open a pull request and/or tweet [@clarabellum](https://twitter.com/clarabellum) or [@mkramer](https://twitter.com/mkramer).
+If you'd like to suggest a new task or state-specific task, you can open a pull request and/or tweet [@clarabellum](https://twitter.com/clarabellum) or [@mkramer](https://twitter.com/mkramer). The file you'll want to edit is src/lib/taskBank.js
 
 Disclosure: We are not connected to any campaign or organization listed. If you like this project, please spread the word and/or donate to one of the squares mentioned on the Bingo card.
-
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -55,24 +53,24 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This section has moved here: <https://facebook.github.io/create-react-app/docs/code-splitting>
 
 ### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+This section has moved here: <https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size>
 
 ### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+This section has moved here: <https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app>
 
 ### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+This section has moved here: <https://facebook.github.io/create-react-app/docs/advanced-configuration>
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+This section has moved here: <https://facebook.github.io/create-react-app/docs/deployment>
 
 ### `yarn build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: <https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify>
