@@ -41,7 +41,7 @@ const taskBank = [
     },
     {
         "title": "Thank a reporter on social media. They are doing hard work and have had a very hard year.",
-        
+
     },
     {
         "title": "Donate to a local news organization that is pounding the pavement and breaking stories.",
@@ -123,6 +123,11 @@ const taskBank = [
     {
         "title": "Volunteer with the DSCC to protect voting rights",
         "link": "https://docs.google.com/forms/d/181qq5C45VH8C-QMBCuxux_5xRiE3kDWDtIwk5bibGxs/viewform?edit_requested=true",
+        "linkText": "Sign Up"
+    },
+    {
+        "title": "Join People's Action battleground states Deep Canvass Phonebank!",
+        "link": "https://www.mobilize.us/peoplesaction/event/293197/",
         "linkText": "Sign Up"
     }
 ];
