@@ -41,7 +41,6 @@ const taskBank = [
     },
     {
         "title": "Thank a reporter on social media. They are doing hard work and have had a very hard year.",
-
     },
     {
         "title": "Donate to a local news organization that is pounding the pavement and breaking stories.",
@@ -115,7 +114,6 @@ const taskBank = [
         "title": "Offer to witness ballots for people in your network who live alone",
         "link": "https://ballotpedia.org/Absentee/mail-in_voting_signature_and_witness_requirements,_2020"
     },
-
     {
         "title": "Host a virtual textbanking event!",
         "link": "https://resistancelabs.com/text-bank/",
